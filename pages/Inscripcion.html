@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/iconork.ico">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/4d71f82498.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!--Animacion AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Animacion animate-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Rugby kine</title>
+</head>
+
+<body>
+    <main class="reserva">
+        <!--NavBar-->
+        <header class="header">
+            <nav class="header__nav">
+                <a class="header__link" href="../index.html">Rugby Kine</a>
+                <img class="header__hamburger" src="../images/icon-hamburger.svg" alt="menu hamburger">
+                <ul class="header__menu animate__animated animate__slideInLeft">
+                    <li class="header__item"><a class="header__link" href="../index.html">Inicio</a></li>
+                    <li class="header__item"><a class="header__link" href="./acercade.html">Nosotros</a>
+                    </li>
+                    <li class="header__item"><a class="header__link" href="./productos.html">Multimedia</a></li>
+                    <li class="header__item"><a class="header__link" href="./contacto.html">Contacto</a></li>
+                    <li class="btn"><a class="btn__link" href="./Inscripcion.html">Inscripcion</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Reservation Section-->
+        <section class="reservation container" data-aos="fade-up">
+            <h2 class="reservation__title">Formulario de Inscripcion</h2>
+            <article class="reservation__card">
+                <h5 class="reservation__name">Inscribite</h5>
+                <hr class="reservation__barra">
+                <form action="" method="">
+                    <label class="reservation__label" for="name">Nombre</label>
+                    <input class="reservation__input" type="text" id="name" name="name" placeholder="Tu nombre" />
+                    <label class="reservation__label" for="telefono">Telefono</label>
+                    <input class="reservation__input" type="number" id="telefono" name="telefono"
+                        placeholder="Telefono" /><br>
+                    <label class="reservation__label" for="email">Email</label>
+                    <input class="reservation__input" type="email" id="email" name="email"
+                        placeholder="Ejemplo@email.com" />
+                    <p class="reservation__question">Posicion en la que jugas
+                        <select class="reservation__select" name="personas">
+                            <option class="reservation__option">Coach</option>
+                            <option class="reservation__option" selected>Foward</option>
+                            <option class="reservation__option">Back</option>
+                        </select>
+                    </p><br>
+                    <p class="reservation__question">Lado en el que te sentis comodo
+                        <select class="reservation__select" name="mesa">
+                            <option class="reservation__option">Afuera</option>
+                            <option class="reservation__option" selected>Adentro</option>
+                        </select>
+                    </p><br>
+                    <p class="reservation__question">Alguna Preferencia?
+                        <select class="reservation__select" name="preferencia">
+                            <option class="reservation__option">No</option>
+                            <option class="reservation__option" selected>Si</option>
+                        </select>
+                    </p><br>
+                    <textarea class="reservation__textarea" name="textarea" rows="10" cols="50"
+                        placeholder="Cual seria?"></textarea><br>
+                </form>
+                <ul class="reservation__btn">
+                    <li class="btn btn--reservation">Enviar</li>
+                </ul>
+                <div class="reservation__circle" data-aos="fade-up"></div>
+            </article>
+        </section>
+    </main>
+    <!--Footer-->
+    <footer class="footer">
+        <p class="footer__copy">&copy; 2022 Rugby kine. All rights reserved</p>
+        <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="https://twitter.com/"><i
+                        class="fa fa-twitter"></i></a></li>
+            <li class="footer__item"><a class="footer__link" href="https://facebook.com/"><i
+                        class="fa fa-facebook"></i></a>
+            <li class="footer__item"><a class="footer__link" href="https://instagram.com/"><i
+                        class="fa fa-instagram"></i></a></li>
+            <li class="footer__item"><a class="footer__link" href="https://whatsapp.com/"><i
+                        class="fa fa-whatsapp"></i></a></li>
+        </ul>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
